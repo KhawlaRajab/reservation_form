@@ -88,7 +88,7 @@ btn.addEventListener('click', function (e) {
     }
 
     content.innerHTML = `User Information: 
-    <span class="close">x</span>
+    <span class="close"><i class="fa fa-close"></i></span>
     <br><br>
      fullName : ${userNameVal} <br>
     email : ${emailVal} <br>
