@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Travel Reservation Form</title>
+</head>
+<body>
+
+ 
+    <div class="header">
+        <h2 class="title">Travel Reservation Form</h2>
+    </div>
+  <div class="backGround"> 
+    <div class="container">
+      <h3>* denotes mandotory</h3> 
+      <form>
+
+         <label for="fullName">Full name<span class="mandotory">*</span class="mandotory">:</label><br/>
+         <input type="text" id="fullName" placeholder="FullName LastName" autofocus required class="full-width" /><br/><br/>
+
+         <label for="email">Email Address<span class="mandotory">*</span class="mandotory">:</label><br/>
+         <input type="email" id="email" name="email" placeholder="Email_Address" required class="full-width" /><br/><br/>
+
+         <label for="select">Select Tour Package<span class="mandotory">*</span class="mandotory">:</label><br/>
+         <select class="Package full-width" required>
+            <option>Goa</option><br/>
+            <option>Goa</option><br/>
+            <option>Goa</option><br/>
+         </select>
+         <br/><br/>
+
+         <label for="arrival-date">Arrival date<span class="mandotory">*</span class="mandotory">:</label><br/>
+         <input type="date" id="arrival-date" placeholder="m/d/y"/ required class="date full-width" min=""><br/><br/>
+
+         <label for="personNum">Number of person<span class="mandotory">*</span class="mandotory">:</label><br/>
+         <input type="number" id="personNum" placeholder="UNKNOWN_TYPE" required class="full-width"/><br/><br/>
+
+         <label for="services">What would you want to avail?<span class="mandotory">*</span class="mandotory"> </label><br/>
+
+       
+         <input type="checkbox" name="boarding" value="Boarding" class="box" >
+         <label for="boarding">Boarding</label><br/>
+
+         <input type="checkbox" name="fooding" value="Fodding" class="box" >
+         <label for="fooding">Fooding</label><br/>
+
+         <input type="checkbox" name="sightSeeing" value="SightSeeing" class="box" >
+         <label for="sightSeeing">SightSeeing</label><br/><br/>
+         
+   
+
+         <label for="discount">Discount Coupon Code:</label><br/>
+         <input type="text" id="discount" placeholder="UNKNOWN_TYPE" class="full-width"/><br/><br/>
+
+         <label>Terms and Conditions<span class="mandotory">*</span class="mandotory">:</label>
+         <br/>
+         <input type="radio" name="agrement" id="agree" class="agreement" value="agree"/>
+         <label for="agree">I agree</label><br/>
+         <input type="radio" name="agrement" id="disagree" class="agreement"/>
+         <label for="disagree">I disagree</label><br/>
+         
+         <button type="submit" class="button full-width" style="margin-bottom: 8px;" disabled>Complete Reservation</button>       
+        </form>
+    </div>
+    <div class="overlay"></div>
+</div> 
+
+
+
+
+  <div class="popup">
+     <div class="content"> 
+     
+</div>
+</div>
+</body>
+</html>
